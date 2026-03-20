@@ -16,11 +16,11 @@ function userValidator(name, age) {
     const willEligible = 18 - age;
 
     if(age <= 17){
-        return console.log(`You are not Eligible for Vote. Try after ${willEligible} years.`)
+        return console.log(`Sorry ${userName}, You are not Eligible for Vote. Try after ${willEligible} years.`)
     }
 
     if(age >= 18){
-        return console.log(`Hello ${userName}, You are a valid voter`)
+        return console.log(`Hello ${userName}, You are a valid voter.`)
     }
 }
 
