@@ -1,4 +1,4 @@
-// Print all the factors of a number.
+w
 
 function factNum(num){
     for(let i = 1; i<=num; i++){
