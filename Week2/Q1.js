@@ -1,23 +1,18 @@
 // Accept size n from user and create an n size array then take n inputs into it and finally print the sum & average of all elements.
 
 
+
 function sumAndAvg(size, inputs) {
-    let arr = [];
     let sum = 0;
 
-    for (let i = 1; i <= size; i++) {
-        arr.push(i);
+    for (let i = 0; i < size; i++) {
+        sum += inputs[i];
     }
 
-    let newArr = [...arr, inputs];
+    let avg = sum / size;
 
-    for(let ar of newArr){
-        sum += ar
-    }
-
-    let avg = Math.floor(sum/newArr.length);
-
-    console.log(`Total sum: ${sum}`, `Average : ${avg}`);
+    console.log(`Total sum: ${sum}`);
+    console.log(`Average: ${avg}`);
 }
 
-sumAndAvg(10, 12);
+sumAndAvg(4, [10, 20, 30, 40]);
