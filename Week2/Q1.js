@@ -11,13 +11,13 @@ function sumAndAvg(size, inputs) {
 
     let newArr = [...arr, inputs];
 
-    for (let ar of newArr) {
+    for(let ar of newArr){
         sum += ar
     }
 
-    let avg = Math.floor(sum / newArr.length);
+    let avg = Math.floor(sum/newArr.length);
 
-    console.log(`Total sum ${sum}`, `Average : ${avg}`);
+    console.log(`Total sum: ${sum}`, `Average : ${avg}`);
 }
 
 sumAndAvg(10, 12);
