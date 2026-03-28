@@ -14,10 +14,9 @@
 
 // reverseNoExtraSpace(10, 20, 30, 40, 50);
 
-function noExtraSpaceReverce(...data){
-    for(let i = 0; i <= Math.floor(data.length/2); i++){
-        console.log(data);
-        [data[i], data[data.length - i]] = [data[data.length - i ], data[i]]
+function noExtraSpaceReverce(...data) {
+    for (let i = 0; i <= Math.floor(data.length / 2); i++) {
+        [data[i], data[data.length - i - 1]] = [data[data.length - i - 1], data[i]]
     }
 
     console.log(data)
